@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px; /* Aumenta o espaçamento interno para uma melhor visualização */
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Aumenta a sombra para dar mais destaque */
+    border-radius: 8px; /* Bordas arredondadas para um estilo mais moderno */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px; /* Aumenta o tamanho do título principal */
+    color: #333; /* Muda para uma cor mais suave nos títulos */
+}
+
+h2 {
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px; /* Aumenta o espaçamento abaixo */
+    color: #007BFF; /* Cor mais forte para títulos secundários */
+    font-size: 22px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555; /* Título terciário com cor mais suave */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Aumenta o espaçamento entre os grupos de formulário */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Aumenta o espaçamento abaixo dos rótulos */
+    font-weight: bold; /* Negrito para destacar os rótulos */
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px; /* Aumenta o preenchimento interno para mais conforto */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Fundo mais claro para os campos de entrada */
+    transition: border-color 0.3s ease-in-out; /* Transição suave para mudanças */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #007BFF; /* Destaque azul ao focar */
+    outline: none; /* Remove o contorno padrão */
+    background-color: #fff; /* Fundo branco ao focar */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+small {
+    display: block;
+    color: #888;
+    font-size: 12px; /* Tamanho menor para o texto de apoio */
+}
+
+input[readonly] {
+    background-color: #e9ecef;
+    color: #666; /* Texto cinza mais suave */
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    select {
+        padding: 8px;
+    }
+}
+
+/* Estilos personalizados para o botão */
+.btn-custom {
+    width: 150px; /* Largura do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007BFF; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer ao passar o mouse */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para cor e animação de clique */
+    font-size: 16px; /* Tamanho do texto */
+    display: block; /* Exibir como bloco */
+    margin: 0 auto; /* Centralizar o botão */
+    text-align: center; /* Alinhar o texto ao centro */
+}
+
+.btn-custom:hover {
+    background-color: #073363; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Elevação leve ao passar o mouse */
+}
+
+.btn-custom:active {
+    background-color: #073363; /* Cor de fundo ao clicar */
+    transform: translateY(0); /* Voltar à posição original ao clicar */
+}
+
