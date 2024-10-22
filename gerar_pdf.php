@@ -180,7 +180,7 @@ $html = '
   }
 </style>
 
-<h1>Formulário de Cadastro</h1>
+<h1>Formulário E-Social</h1>
 
 <!-- Dados da Contratação -->
 <h2>Dados da Contratação</h2>
